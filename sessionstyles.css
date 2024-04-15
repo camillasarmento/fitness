@@ -1,0 +1,97 @@
+/*Session*/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    background-color: #d71818;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 10px;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para la tabla de resultados */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: #d71818;
+    color: white;
+    text-align: left;
+}
+
+/*CABECERA*/
+#main-header {
+    background: #ffffff;
+    color: #d71818;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+#main-header a {
+    color: #1074e5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-header .site-name {
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 5em;
+}
+
+/* Navegación */
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background:orangered;
+}

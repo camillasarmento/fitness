@@ -1,0 +1,162 @@
+body {
+    background-image: url("images/login.jpg");
+    color: #FFFFFF;
+}
+
+.container .p {
+    font-size: 5em;
+    text-align: center;
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}
+
+.object {
+    position: absolute;
+    animation: sway 2.4s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+    left: 0;
+    right: 0;
+    height: 5%;
+    z-index: 999;
+    text-transform: uppercase;
+}
+
+.object-shape {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    background-color: orangered;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 800;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.object-shape span {
+    font-size: 22px;
+    color:white;
+}
+
+.object-rope {
+    height: 100%;
+    width: 5px;
+    background-color: orangered;
+    content: "";
+    display: block;
+    margin-left: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 35vh 20px 20px 20px
+}
+
+.logo {
+    max-width: 300px;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.message {
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: orangered;
+    color: #fff;
+    font-size: 1em;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/*CABECERA*/
+#main-header {
+    background: #ffffff;
+    color: #d71818;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+#main-header a {
+    color: #1074e5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-header .site-name {
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 5em;
+}
+
+/* Navegación */
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background:orangered;
+}

@@ -1,0 +1,137 @@
+/*CABECERA*/
+#main-header {
+    background: #ffffff;
+    color: #d71818;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+#main-header a {
+    color: #1074e5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-header .site-name {
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 5em;
+}
+
+/* Navegación */
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background:orangered;
+}
+
+/*CONTENIDO*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card .hero-heading{
+    font-size: 5em;
+    color: #ffffff;
+    padding-top: 50px;
+}
+.card .hero-text {
+    width: 70%;
+    color:white;
+    font-size: 1.5em;
+}
+
+/* Hero */
+.hero {
+    height:700px;
+    margin-bottom: 50px;
+    background-image: url("images/hero.jpg");
+    width:100%;
+    padding: 0 50px;
+}
+
+.hero .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .btn-primary {
+        background: orangered;
+        color: #fff;
+        font-size: 1em;
+    }
+
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
+
+
+/*PIE PÁGINA*/
+#main-footer {
+    background: #d71818;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+#main-footer p {
+    margin: 0;
+}
+
+#main-footer a {
+    color: white;
+}
+
+
+
+
+
+
+
+

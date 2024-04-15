@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sesiones</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="sessionstyles.css" />
+</head>
+
+<body onload="javascript:initialize()">
+<header id="main-header">
+    <a id="logo-header" href="#">
+        <a href="index.html">
+            <img src="images/logo.jpeg" alt="logo"  width="100px" height="75px"/>
+        </a>
+        <span class="site-name">FITNESS APP</span>
+    </a> <!-- / #logo-header -->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="session.html">Sesiones</a></li>
+            <li><a href="wiki.html">Wiki</a></li>
+        </ul>
+    </nav><!-- / nav -->
+</header>
+    <h1>Rutinas de Ejercicios Personalizadas</h1>
+
+    <h2>Añadir Ejercício</h2>
+    <form id="addExercise" name="addExercise" action="javascript:submitExercise()">
+        <label for="txtExerciseName">name</label>
+        <input type="text" id="txtExerciseName" name="name">
+
+        <label for="txtExerciseInstructions">instructions</label>
+        <input type="text" id="txtExerciseInstructions" name="instructions"/>
+
+        <label for="txtExerciseMuscles">muscles</label>
+        <input type="text" id="txtExerciseMuscles" name="muscles"/>
+
+        <label for="txtExerciseEquipment">equipment</label>
+        <input type="text" id="txtExerciseEquipment" name="equipment"/>
+
+        <input type="submit" id="submitExercise" value="Añadir" />
+    </form>
+
+    &nbsp;
+
+    <h2>Ejercícios Disponibles</h2>
+    <table id="tableExercises">
+        <thead>
+        <tr id="trExercisesHeader">
+            <th>name</th><th>instructions</th><th>muscles</th><th>equipment</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="trExercisesRow" style="display:none">
+            <td>name</td><td>instructions</td><td>muscles</td><td>equipment</td>
+        </tr>
+        </tbody>
+    </table>
+
+    &nbsp;
+
+
+    <h2>Añadir Sesión</h2>
+    <form id="addSession" name="addSession" action="javascript:submitSession();refreshSessions()">
+        <label for="selSessionExercise">exercise</label>
+        <select id="selSessionExercise" name="exercise">
+        </select>
+
+        <label for="txtSessionDuration">duration</label>
+        <input type="text" id="txtSessionDuration" name="duration"/>
+
+        <label for="selSessionIntensity">intensity</label>
+        <select id="selSessionIntensity" name="intensity">
+            <option value="low">Bajo</option>
+            <option value="medium">Medio</option>
+            <option value="high">Alta</option>
+        </select>
+
+        <label for="txtSessionRendimiento">rendimiento</label>
+        <input type="text" id="txtSessionRendimiento" name="rendimiento"/>
+
+        <label for="selSessionObjective">objective</label>
+        <select id="selSessionObjective" name="objective">
+            <option value="weight">Perder peso</option>
+            <option value="strength">Ganar fuerza</option>
+            <option value="cardio">Mejorar resistencia cardiovascular</option>
+        </select>
+
+        <input type="submit" id="submitSession" value="Añadir" />
+    </form>
+
+    &nbsp;
+
+    <h2>Sesiones Realizadas</h2>
+    <table id="tableSessions">
+        <thead>
+        <tr id="trSessionsHeader">
+            <th>exercise</th><th>duration</th><th>intensity</th><th>rendimiento</th><th>objective</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="trSessionsRow" style="display:none">
+            <td>exercise</td><td>duration</td><td>intensity</td><td>rendimiento</td><td>objective</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
